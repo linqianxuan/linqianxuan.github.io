@@ -9,13 +9,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #F4F4F9;
             color: #333;
             line-height: 1.6;
         }
 
         header {
-            background-color: #007acc;
+            background-color: #8C1515;
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -34,7 +34,7 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #007acc;
+            color: #8C1515;
         }
 
         nav a:hover {
@@ -53,15 +53,40 @@
         footer {
             text-align: center;
             padding: 10px 0;
-            background-color: #f4f4f9;
+            background-color: #F4F4F9;
             color: #666;
             font-size: 0.9em;
             margin-top: 20px;
         }
 
         footer a {
-            color: #007acc;
+            color: #8C1515;
             text-decoration: none;
+        }
+
+        .photo-section img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .sub-section {
+            margin-top: 10px;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            max-width: 200px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
     </style>
 </head>
@@ -73,34 +98,46 @@
 
     <nav>
         <a href="#about">About Me</a>
-        <a href="#critical-thinking">Critical Thinking</a>
-        <a href="#past-and-future">Past & Future</a>
+        <a href="#essays">Reflections</a>
         <a href="#personal-life">Personal Life</a>
     </nav>
 
     <div class="container" id="about">
         <h2>About Me</h2>
-        <p>Hi, I’m Lin Qianxuan, a curious and enthusiastic individual passionate about technology, society, and their intersection. I am currently applying to Stanford, a place I feel aligns deeply with my values and aspirations.</p>
-        <p>My goal is to contribute meaningfully to the evolution of technology while keeping humanity and sustainability at its core.</p>
+        <div class="photo-section">
+            <img src="your-photo-url.jpg" alt="Lin Qianxuan">
+            <p>Hello, I’m Lin Qianxuan. A passionate individual who enjoys exploring the intersection of technology and society. My enthusiasm lies in critical thinking about how technological progress can shape a sustainable future. I also value creativity and balance in life, combining my academic pursuits with a rich personal journey.</p>
+        </div>
     </div>
 
-    <div class="container" id="critical-thinking">
-        <h2>Critical Thinking</h2>
-        <p>Industrial revolutions have shaped society in profound ways, yet the balance between progress and responsibility remains critical. My perspective explores how we can harness innovation without losing sight of ethical and environmental considerations. Technology isn’t just about gadgets; it’s about bridging gaps and enriching lives.</p>
-    </div>
-
-    <div class="container" id="past-and-future">
-        <h2>Past & Future</h2>
-        <p>The history of technology showcases humanity’s resilience and ingenuity. From the steam engine to artificial intelligence, we’ve come far, but the journey isn’t over. My vision for the future involves integrating technology into everyday life while addressing challenges like climate change, digital ethics, and equitable access.</p>
+    <div class="container" id="essays">
+        <h2>Reflections</h2>
+        <div class="sub-section">
+            <h3>Research</h3>
+            <p>Exploring advanced methodologies in motion synthesis, integrating industrial and academic insights.</p>
+        </div>
+        <div class="sub-section">
+            <h3>Technology and Industry</h3>
+            <p>Critical reflections on how technology reshapes industries while maintaining ethical considerations.</p>
+        </div>
+        <div class="sub-section">
+            <h3>Progress of Society</h3>
+            <p>Analyzing historical and future trends of society and the role technology plays in shaping humanity’s path forward.</p>
+        </div>
     </div>
 
     <div class="container" id="personal-life">
         <h2>Personal Life</h2>
-        <p>Beyond academics, I love exploring new places, learning diverse perspectives, and enjoying simple moments like a good book or a scenic hike. Staying grounded in personal values and experiences is as important as dreaming big.</p>
+        <p>I believe in living a well-rounded life. Beyond academics, I have a deep passion for sports and adventures that enrich my soul. Here are a few glimpses of my life:</p>
+        <div class="photo-gallery">
+            <img src="photo1-url.jpg" alt="Activity Photo 1">
+            <img src="photo2-url.jpg" alt="Activity Photo 2">
+            <img src="photo3-url.jpg" alt="Activity Photo 3">
+        </div>
     </div>
 
     <footer>
-        <p>© 2024 Lin Qianxuan | <a href="https://github.com/linqianxuan">GitHub</a></p>
+        <p>© 2025 Lin Qianxuan | <a href="https://github.com/linqianxuan">GitHub</a></p>
     </footer>
 </body>
 </html>
