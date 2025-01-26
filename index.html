@@ -49,7 +49,28 @@
         nav a:hover {
             text-decoration: underline;
         }
-
+        /* Styling for photo-gallery */
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Adds space between images */
+        }
+        
+        .photo-gallery img {
+            width: 300px; /* Adjust width for larger images */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensures the images fit properly */
+            border-radius: 10px; /* Adds rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+        
+        .photo-gallery img:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+        
+        /* Container styling (use only once) */
         .container {
             max-width: 900px;
             margin: 20px auto;
@@ -58,29 +79,16 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-
+        
+        /* Photo section for profile image */
         .photo-section img {
             display: block;
             margin: 20px auto;
-            border-radius: 50%;
-            width: 180px;
+            border-radius: 50%; /* Circular profile image */
+            width: 180px; /* Profile image size */
             height: 180px;
         }
 
-        .photo-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .photo-gallery img {
-            width: 200px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
 
         footer {
             text-align: center;
@@ -146,15 +154,17 @@
         </div>
     </div>
 
+
     <div class="container" id="personal-life">
-        <h2>Personal Life</h2>
-        <p>Beyond academia, I cherish moments of adventure and personal growth. Here are glimpses of my life:</p>
-        <div class="photo-gallery">
-            <img src="images/hiking.jpg" alt="Hiking in the Blue Mountains, Sydney.">
-            <img src="images/kayak.JPG" alt="Kayaking during the Hot Air Balloon Festival, Canberra.">
-            <img src="images/kayak_syd.JPG" alt="Kayaking at Sydney Harbour.">
-        </div>
+    <h2>Personal Life</h2>
+    <p>Beyond academia, I cherish moments of adventure and personal growth. Here are glimpses of my life:</p>
+    <div class="photo-gallery">
+        <img src="images/hiking.jpg" alt="Hiking in the Blue Mountains, Sydney.">
+        <img src="images/kayak.JPG" alt="Kayaking during the Hot Air Balloon Festival, Canberra.">
+        <img src="images/kayak_syd.JPG" alt="Kayaking at Sydney Harbour.">
     </div>
+</div>
+
 
     <footer>
         <p>© 2025 Qianxuan Lin | <a href="https://github.com/linqianxuan">GitHub</a></p>
