@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lin Qianxuan - Personal Website</title>
+    <title>Qianxuan Lin - Personal Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Helvetica Neue", Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #F4F4F9;
+            background-color: #FAFAFA;
             color: #333;
-            line-height: 1.6;
+            line-height: 1.8;
         }
 
         header {
             background-color: #8C1515;
             color: white;
-            padding: 20px 0;
+            padding: 30px 0;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3em;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+            font-style: italic;
         }
 
         nav {
@@ -35,6 +41,7 @@
             margin: 0 15px;
             text-decoration: none;
             color: #8C1515;
+            font-weight: bold;
         }
 
         nav a:hover {
@@ -42,21 +49,44 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 20px auto;
             padding: 20px;
             background: white;
-            border-radius: 8px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo-section img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+        }
+
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .photo-gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         footer {
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
             background-color: #F4F4F9;
             color: #666;
             font-size: 0.9em;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         footer a {
@@ -64,36 +94,24 @@
             text-decoration: none;
         }
 
-        .photo-section img {
-            display: block;
-            margin: 0 auto;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: #8C1515;
+            margin-bottom: 15px;
         }
 
         .sub-section {
-            margin-top: 10px;
-        }
-
-        .photo-gallery img {
-            width: 100%;
-            max-width: 200px;
-            margin: 10px;
-            border-radius: 8px;
-        }
-
-        .photo-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            margin-top: 15px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Qianxuan Lin</h1>
-        <p>Thoughts, Progress, and the Future</p>
+        <p>Exploring Innovation, Technology, and Life</p>
     </header>
 
     <nav>
@@ -105,39 +123,40 @@
     <div class="container" id="about">
         <h2>About Me</h2>
         <div class="photo-section">
-            <img src="your-photo-url.jpg" alt="Lin Qianxuan">
-            <p>Hello, I’m Lin Qianxuan. A passionate individual who enjoys exploring the intersection of technology and society. My enthusiasm lies in critical thinking about how technological progress can shape a sustainable future. I also value creativity and balance in life, combining my academic pursuits with a rich personal journey.</p>
+            <img src="images/profile.jpg" alt="Lin Qianxuan">
+            <p>Hello, I’m Qianxuan Lin. As a passionate computer scientist, I aim to bridge the gap between cutting-edge technology and societal impact. My research focuses on human motion synthesis and the ethical integration of AI into our everyday lives. I strive for a future where technology enhances creativity, empathy, and sustainability.</p>
         </div>
     </div>
 
     <div class="container" id="essays">
         <h2>Reflections</h2>
         <div class="sub-section">
-            <h3>Research</h3>
-            <p>Exploring advanced methodologies in motion synthesis, integrating industrial and academic insights.</p>
+            <h3>Research Journey</h3>
+            <p>Diving deep into human motion synthesis, blending advanced machine learning models like transformers and VAEs for groundbreaking results.</p>
         </div>
         <div class="sub-section">
-            <h3>Technology and Industry</h3>
-            <p>Critical reflections on how technology reshapes industries while maintaining ethical considerations.</p>
+            <h3>Technological Impact</h3>
+            <p>Examining the intersection of technology and society, ensuring innovation remains ethical and inclusive.</p>
         </div>
         <div class="sub-section">
-            <h3>Progress of Society</h3>
-            <p>Analyzing historical and future trends of society and the role technology plays in shaping humanity’s path forward.</p>
+            <h3>Vision for the Future</h3>
+            <p>Believing in technology's power to inspire and shape a harmonious coexistence of human creativity and AI advancements.</p>
         </div>
     </div>
 
     <div class="container" id="personal-life">
         <h2>Personal Life</h2>
-        <p>I believe in living a well-rounded life. Beyond academics, I have a deep passion for sports and adventures that enrich my soul. Here are a few glimpses of my life:</p>
+        <p>Beyond academia, I cherish moments of adventure and personal growth. Here are glimpses of my life:</p>
         <div class="photo-gallery">
-            <img src="photo1-url.jpg" alt="Activity Photo 1">
-            <img src="photo2-url.jpg" alt="Activity Photo 2">
-            <img src="photo3-url.jpg" alt="Activity Photo 3">
+            <img src="images/photo1.jpg" alt="Hiking Adventure">
+            <img src="images/photo2.jpg" alt="Creative Project">
+            <img src="images/photo3.jpg" alt="Exploring New Places">
         </div>
     </div>
 
     <footer>
-        <p>© 2025 Lin Qianxuan | <a href="https://github.com/linqianxuan">GitHub</a></p>
+        <p>© 2025 Qianxuan Lin | <a href="https://github.com/linqianxuan">GitHub</a></p>
     </footer>
 </body>
 </html>
+
