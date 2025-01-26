@@ -1,0 +1,20 @@
+/* Styling for photo-gallery */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adds space between images */
+}
+
+.photo-gallery img {
+    width: 300px; /* Adjust width for larger images */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the images fit properly */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
