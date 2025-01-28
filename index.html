@@ -70,7 +70,7 @@
             transform: scale(1.05); /* Slight zoom effect on hover */
         }
         
-        /* Container styling (use only once) */
+        /* Container styling */
         .container {
             max-width: 900px;
             margin: 20px auto;
@@ -84,10 +84,12 @@
         .photo-section img {
             display: block;
             margin: 20px auto;
-            border-radius: 50%; /* Circular profile image */
-            width: 180px; /* Profile image size */
-            height: 180px;
+            border-radius: 50%; /* Makes it circular */
+            width: 200px; /* Increase to make the circle bigger */
+            height: 200px;
+            object-fit: cover;  /* Prevents distortion by cropping the image */
         }
+
 
 
         footer {
@@ -134,7 +136,11 @@
         <h2>About Me</h2>
         <div class="photo-section">
             <img src="images/me.JPG" alt="Lin Qianxuan">
-            <p>Hello, I’m Qianxuan Lin. As a passionate computer scientist, I aim to bridge the gap between cutting-edge technology and societal impact. My research focuses on human motion synthesis and the ethical integration of AI into our everyday lives. I strive for a future where technology enhances creativity, empathy, and sustainability.</p>
+            <p>I’ve always been fascinated by how technology reshapes the world. My journey in computer science began with a deep curiosity about artificial intelligence, machine learning, and computer vision—powerful tools that are already shaping industries and everyday life. Through my academic and industrial experiences, I’ve built a strong foundation in these areas, but more importantly, I’ve realized that technology isn’t just about following existing paths. It’s about creating something new—contributing to the next wave of global innovation rather than merely adopting what’s already been established.</p>
+
+            <p>In the past few years, I’ve had the opportunity to bridge theory with real-world applications. My hands-on experience in industry led to the development of two national invention patents—an experience that taught me how applied computer science can transform industries. Yet, while this work was impactful, I knew it only scratched the surface. The most exciting innovations today, particularly in AI, aren’t just about application; they’re about pushing the boundaries of what’s possible. That’s the space I want to be in. I want to create solutions that don’t just optimize existing systems but redefine them entirely.</p>
+
+            <p>Research and innovation are filled with uncertainty. Following existing methods is often simpler, safer, and more cost-effective, but I believe that if I have the ability to contribute to the forefront of technology, then I should. The future of AI, automation, and intelligent systems isn’t something I want to passively observe—I want to shape it. I see my role as a contributor in the global wave of technological transformation, someone willing to take on the risks of research and development to bring something valuable into the world.</p>
         </div>
     </div>
 
