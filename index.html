@@ -83,25 +83,36 @@
 
         
         .research-container {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            max-width: 1000px;
-            margin: 0 auto;
+            display: flex; /* Aligns poster and text side by side */
+            align-items: center; /* Centers them vertically */
+            gap: 30px; /* Adds spacing between sections */
+            max-width: 1000px; /* Keeps layout clean */
+            margin: 20px auto; /* Centers the content */
+        }
+        
+        .poster-container {
+            flex-shrink: 0; /* Prevents image from shrinking */
+            text-align: center; /* Centers text below the poster */
         }
         
         .poster-thumbnail {
-            width: 250px;
+            width: 250px; /* Thumbnail size */
             height: auto;
             border-radius: 5px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
+            cursor: pointer;
         }
         
         .poster-thumbnail:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Enlarge on hover */
         }
-
+        
+        .thesis-text {
+            flex: 1; /* Allows text to take up remaining space */
+            font-size: 18px;
+            line-height: 1.6;
+        }
 
         
         .photo-section {
@@ -189,29 +200,33 @@
     <div class="container" id="essays">
     <h2>Reflections</h2>
 
+    
     <div class="sub-section">
         <h3>Research Journey</h3>
         <p>My honors thesis marked a defining moment in my academic journey. Focused on <strong>human motion synthesis</strong>, I developed a <strong>transformer-based autoencoder</strong> to generate realistic 3D human motion. By leveraging <strong>self-attention mechanisms</strong> and the <strong>SMPL model</strong>, my research tackled the challenge of synthesizing smooth and responsive motions from intuitive inputs, such as joystick gestures. Validated using the <strong>AMASS dataset</strong>, this research demonstrated the potential of AI-driven motion synthesis to enhance interactive experiences in gaming and virtual reality.</p>
-
+    
         <p>Through this experience, I learned the intricacies of deep learning architectures, dataset processing, and the rigorous cycle of research and validation. Beyond the technical aspects, it reinforced the importance of resilience—balancing experimentation, failure, and iteration to reach meaningful results.</p>
-
+    
+        <!-- Updated Side-by-Side Layout -->
         <div class="research-container">
-            <!-- Poster Thumbnail (Click to Expand) -->
+            <!-- Left: Poster Thumbnail -->
             <div class="poster-container">
                 <a href="https://linqianxuan.github.io/myposter.pdf" target="_blank">
-                    <embed src="thesis-poster.pdf#toolbar=0" class="poster-thumbnail" type="application/pdf">
+                    <img src="images/poster-thumbnail.jpg" class="poster-thumbnail" alt="Honors Thesis Poster">
                 </a>
                 <p><small>Click to enlarge</small></p>
             </div>
-        
-            <p><a href="https://linqianxuan.github.io/Honours_Thesis.pdf" target="_blank"><strong>Read my full honours thesis (PDF)</strong></a></p>
-
-            
+    
+            <!-- Right: Thesis Text -->
+            <div class="thesis-text">
+                <p>My honors thesis explores the intersection of deep learning and human motion synthesis, leveraging transformer-based autoencoders to generate realistic 3D movements.</p>
+                <p><a href="https://linqianxuan.github.io/Honours_Thesis.pdf" target="_blank"><strong>Read my full honors thesis (PDF)</strong></a></p>
+            </div>
         </div>
-
-
+    
         <p>Currently, I am collaborating with a senior PhD student on a cutting-edge <strong>3D research project</strong>, aiming for submission to <strong>ICCV in March 2025</strong>. This project allows me to deepen my expertise in <strong>computer vision and 3D modeling</strong>, expanding my research scope beyond motion synthesis.</p>
     </div>
+
 
     <div class="sub-section">
         <h3>Industry Reflection</h3>
