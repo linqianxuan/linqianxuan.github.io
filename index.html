@@ -123,8 +123,7 @@
         .photo-section {
             display: flex; /* Flexbox for side-by-side layout */
             
-            align-items: flex-start; /* Aligns items to the top */
-            justify-content: center;
+
             gap: 30px; /* Space between image and text */
             max-width: 900px; /* Set a container width */
             margin: 0 auto; /* Center the section */
@@ -136,6 +135,7 @@
             border-radius: 50%;
             object-fit: cover;
             flex-shrink: 0; /* Prevents image from resizing */
+            align-self: center;
         }
         
         .about-text {
