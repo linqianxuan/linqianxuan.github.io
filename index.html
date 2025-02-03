@@ -199,6 +199,46 @@
         .sub-section {
             margin-top: 15px;
         }
+
+        /* Dropdown menu styling */
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        
+        .dropbtn {
+            text-decoration: none;
+            color: #8C1515;
+            font-weight: bold;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            min-width: 160px;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: #8C1515;
+            padding: 10px 15px;
+            display: block;
+            text-decoration: none;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f4f4f4;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -210,7 +250,15 @@
     <nav>
         <a href="#graduate">Graduation 🎓</a>
         <a href="#about">About Me</a>
-        <a href="#essays">Reflections</a>
+
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Reflections ▼</a>
+            <div class="dropdown-content">
+                <a href="#research">Research</a>
+                <a href="#industry">Industry</a>
+                <a href="#vision">Vision</a> <!-- Changed from "Journey" -->
+            </div>
+        </div>
         <a href="#personal-life">Personal Life</a>
     </nav>
 
