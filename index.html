@@ -86,21 +86,22 @@
         }
 
         
+        /* Research Section Styling */
         .research-container {
-            display: flex; /* Aligns poster and text side by side */
-            align-items: center; /* Centers them vertically */
-            gap: 30px; /* Adds spacing between sections */
-            max-width: 1000px; /* Keeps layout clean */
-            margin: 20px auto; /* Centers the content */
+            display: block; /* Ensure poster and text are stacked */
+            text-align: center; /* Center aligns the poster */
+            max-width: 1000px;
+            margin: 20px auto;
         }
         
+        /* Center the poster image at the top */
         .poster-container {
-            flex-shrink: 0; /* Prevents image from shrinking */
-            text-align: center; /* Centers text below the poster */
+            text-align: center;
+            margin-bottom: 20px; /* Space between poster and text */
         }
         
         .poster-thumbnail {
-            width: 250px; /* Small preview */
+            width: 300px; /* Adjust for a balanced look */
             height: auto;
             border-radius: 5px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -109,14 +110,18 @@
         }
         
         .poster-thumbnail:hover {
-            transform: scale(1.05); /* Enlarge on hover */
+            transform: scale(1.05);
         }
         
+        /* Adjust thesis text alignment */
         .thesis-text {
-            flex: 1; /* Allows text to take up remaining space */
+            text-align: left; /* Ensures natural reading flow */
             font-size: 18px;
             line-height: 1.6;
+            margin: 0 auto; /* Centers content */
+            max-width: 800px; /* Keeps text width reasonable for readability */
         }
+
 
 
         
@@ -236,16 +241,15 @@
     
     <div class="sub-section">
         <h3>Research Journey</h3>
-
-        <!-- Updated Side-by-Side Layout -->
         <div class="research-container">
-            <!-- Left: Poster Thumbnail -->
+            <!-- Thesis Poster Centered Above -->
             <div class="poster-container">
                 <a href="https://linqianxuan.github.io/myposter.pdf" target="_blank">
                     <img src="images/myposter.jpg" class="poster-thumbnail" alt="Honors Thesis Poster">
                 </a>
                 <p><small>Click to enlarge</small></p>
             </div>
+
 
             <!-- Right: Thesis Text -->
             <div class="thesis-text">
