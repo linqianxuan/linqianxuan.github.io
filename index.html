@@ -14,6 +14,7 @@
             background-color: #FAFAFA;
             color: #333;
             line-height: 1.8;
+            font-size: 18px; /* Consistent text size */
         }
 
         header {
@@ -55,6 +56,13 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px; /* Adds space between images */
+        }
+
+        /* Personal Life Section - Match Text Size */
+        #personal-life {
+            font-size: 18px; /* Matches other sections */
+            max-width: 800px;
+            margin: 40px auto;
         }
         
         .photo-gallery img {
@@ -136,56 +144,50 @@
 
 
 
-        /* About Me Section - Full Width Flexbox */
+        /* Container Layout for About Me */
         .photo-section {
             display: flex;
-            flex-direction: column; /* Stack image and text on smaller screens */
-            align-items: center; /* Centers the image and text within their columns */
-            justify-content: center; /* Ensures equal spacing on both sides */
-            max-width: 900px; /* Matches container width */
-            margin: 0 auto; /* Center the entire section */
-        }
-        
-        /* Two-Column Layout for Larger Screens */
-        @media (min-width: 768px) {
-            .photo-section {
-                flex-direction: row; /* Places image and text side by side */
-                align-items: flex-start; /* Aligns image at the top */
-            }
+            align-items: flex-start; /* Aligns image to the top */
+            justify-content: center; /* Centers content */
+            max-width: 1000px; /* Matches research & industry sections */
+            margin: 0 auto; /* Centers entire section */
+            gap: 40px; /* Space between image and text */
         }
         
         /* Profile Photo Styling */
         .profile-photo {
-            width: 250px;
-            height: 250px;
+            width: 280px;
+            height: 280px;
             border-radius: 50%;
             object-fit: cover;
             flex-shrink: 0;
-            margin-bottom: 20px; /* Adds space below image on smaller screens */
         }
         
-        /* About Text */
+        /* Text in About Me */
         .about-text {
-            flex: 1; /* Allows text to take up remaining space */
-            text-align: left; /* Keeps text aligned for readability */
-            max-width: 600px; /* Ensures a good text width */
+            flex: 1; /* Takes remaining space */
+            max-width: 600px; /* Keeps width readable */
         }
-
-
-        
-
-
-
-
         
         
                 
-        /* Innovation in Practice Section Styling */
-        .innovation-container {
-            display: block; /* Ensures image appears on top */
-            text-align: center; /* Centers image and text */
-            max-width: 1000px; /* Matches research section width */
-            margin: 20px auto; /* Centers content */
+
+
+
+
+        
+                
+        /* Research & Industry Should Match About Me */
+        .research-container, .innovation-container {
+            max-width: 1000px;
+            margin: 40px auto; /* Centers content */
+            font-size: 18px; /* Matches other sections */
+        }
+        
+        /* Consistent Subtitle Spacing */
+        .research-container h4, .innovation-container h3 {
+            margin-top: 40px; /* Adds top space */
+            margin-bottom: 0; /* No extra space below */
         }
         
         /* Industry Image - Smaller and on Top */
