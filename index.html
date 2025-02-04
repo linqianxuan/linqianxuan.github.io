@@ -91,7 +91,14 @@
             display: block; /* Ensure poster and text are stacked */
             text-align: center; /* Center aligns the poster */
             max-width: 1000px;
-            margin: 20px auto;
+            
+        }
+
+                
+        /* Research Section Subtitle Spacing */
+        .research-container h4 {
+            margin-top: 40px; /* Adds larger space above subtitles */
+            margin-bottom: 0; /* No extra space below the subtitle */
         }
         
         /* Center the poster image at the top */
@@ -149,26 +156,46 @@
             flex: 1; /* Allow text to take up remaining space */
         }
 
-
-
         
-        /* Industry Reflection Image Styling */
+        
+                
+        /* Innovation in Practice Section Styling */
+        .innovation-container {
+            display: block; /* Ensures image appears on top */
+            text-align: center; /* Centers image and text */
+            max-width: 1000px; /* Matches research section width */
+            margin: 20px auto; /* Centers content */
+        }
+        
+        /* Industry Image - Smaller and on Top */
         .industry-image {
             text-align: center;
-            margin-top: 20px;
+            margin-bottom: 20px; /* Space between image and text */
         }
         
         .industry-image img {
-            width: 80%; /* Adjust size for a balanced layout */
-            max-width: 900px; /* Prevents image from being too large */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
+            width: 300px; /* Smaller image size */
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
         }
         
         .industry-image img:hover {
             transform: scale(1.05);
         }
+        
+        /* Align Text for Innovation Section */
+        .innovation-text {
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px; /* Matches research text width */
+        }
+
+
 
 
 
