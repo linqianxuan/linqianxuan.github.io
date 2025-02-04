@@ -136,32 +136,46 @@
 
 
 
-        
-
-
+        /* About Me Section - Full Width Flexbox */
         .photo-section {
             display: flex;
-            align-items: center; /* Aligns image and text vertically */
+            flex-direction: column; /* Stack image and text on smaller screens */
+            align-items: center; /* Centers the image and text within their columns */
             justify-content: center; /* Ensures equal spacing on both sides */
-            gap: 30px; /* Space between image and text */
-            max-width: 900px; /* Set a reasonable container width */
-            margin: 0 auto; /* Centers the whole section */
+            max-width: 900px; /* Matches container width */
+            margin: 0 auto; /* Center the entire section */
         }
         
+        /* Two-Column Layout for Larger Screens */
+        @media (min-width: 768px) {
+            .photo-section {
+                flex-direction: row; /* Places image and text side by side */
+                align-items: flex-start; /* Aligns image at the top */
+            }
+        }
+        
+        /* Profile Photo Styling */
         .profile-photo {
-            width: 350px;
-            height: 350px;
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
             object-fit: cover;
-            flex-shrink: 0; /* Prevents image from resizing */
+            flex-shrink: 0;
+            margin-bottom: 20px; /* Adds space below image on smaller screens */
+        }
+        
+        /* About Text */
+        .about-text {
+            flex: 1; /* Allows text to take up remaining space */
+            text-align: left; /* Keeps text aligned for readability */
+            max-width: 600px; /* Ensures a good text width */
         }
 
+
         
-        .about-text {
-            font-size: 18px;
-            line-height: 1.6;
-            flex: 1; /* Allow text to take up remaining space */
-        }
+
+
+
 
         
         
