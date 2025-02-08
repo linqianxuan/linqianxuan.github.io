@@ -149,14 +149,16 @@
             gap: 40px; /* Space between image and text */
         }
         
-        /* Profile Photo Styling */
+
+        /* Profile Photo Styling - Updated */
         .profile-photo {
-            width: 280px;
-            height: 280px;
-            border-radius: 50%;
-            object-fit: cover;
-            flex-shrink: 0;
+            width: 100%; /* Ensure it takes the available width */
+            max-width: 300px; /* Prevent it from being too large */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Optional: Slightly rounded corners */
+            display: block;
         }
+
         
         /* Text in About Me */
         .about-text {
